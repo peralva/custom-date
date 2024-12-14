@@ -1,22 +1,45 @@
-# @peralva/npm-template
+# @peralva/custom-date
 
-NPM Template
+Custom Date
 
-[![NPM Version](https://img.shields.io/npm/v/%40peralva%2Fnpm-template)](https://www.npmjs.com/package/@peralva/npm-template?activeTab=versions)
-[![GitHub Release Date](https://img.shields.io/github/release-date/peralva/npm-template)](https://github.com/peralva/npm-template/releases)
-[![GitHub License](https://img.shields.io/github/license/peralva/npm-template)](https://github.com/peralva/npm-template?tab=MIT-1-ov-file#readme)
-[![NPM Downloads](https://img.shields.io/npm/dm/%40peralva%2Fnpm-template)](https://www.npmjs.com/package/@peralva/npm-template)
-[![NPM Publish](https://github.com/peralva/npm-template/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/peralva/npm-template/actions/workflows/npm-publish.yml)
+[![NPM Version](https://img.shields.io/npm/v/%40peralva%2Fcustom-date)](https://www.npmjs.com/package/@peralva/custom-date?activeTab=versions)
+[![GitHub Release Date](https://img.shields.io/github/release-date/peralva/custom-date)](https://github.com/peralva/custom-date/releases)
+[![GitHub License](https://img.shields.io/github/license/peralva/custom-date)](https://github.com/peralva/custom-date?tab=MIT-1-ov-file#readme)
+[![NPM Downloads](https://img.shields.io/npm/dm/%40peralva%2Fcustom-date)](https://www.npmjs.com/package/@peralva/custom-date)
+[![NPM Publish](https://github.com/peralva/custom-date/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/peralva/custom-date/actions/workflows/npm-publish.yml)
 
 ## Installation
 
 ```bash
-npm install @peralva/npm-template
+npm install --save @peralva/custom-date
 ```
 
 ## Usage
 
+### Get date string from a mask
+
 ```ts
-import npmTemplate from '@peralva/npm-template';
-console.log(npmTemplate);
+import { CustomDate } from '@peralva/custom-date';
+
+const date = new CustomDate();
+
+const stringDate = date.toCustomString('yyyy-MM-dd HH:mm:ss.SSS', {
+	timezone: -180,
+});
+
+console.log(stringDate);
+```
+
+### Change date instance from a mask
+
+```ts
+import { CustomDate } from '@peralva/custom-date';
+
+const date = new CustomDate();
+
+date.fromString('20241214 12:34:56.789', 'yyyyMMdd HH:mm:ss.SSS', {
+	timezone: -180,
+});
+
+console.log(date);
 ```

@@ -1,9 +1,9 @@
 {
 	"author": "Bruno Peralva <brunoperalva@hotmail.com>",
 	"bugs": {
-		"url": "https://github.com/peralva/npm-template/issues"
+		"url": "https://github.com/peralva/custom-date/issues"
 	},
-	"description": "NPM Template",
+	"description": "Custom Date",
 	"devDependencies": {
 		"@eslint/js": "^9.16.0",
 		"@peralva/prettier-config": "^1.0.15",
@@ -32,7 +32,7 @@
 		"lib/index.js",
 		"lib/index.mjs"
 	],
-	"homepage": "https://github.com/peralva/npm-template#readme",
+	"homepage": "https://github.com/peralva/custom-date#readme",
 	"keywords": [
 		"npm",
 		"template"
@@ -40,14 +40,14 @@
 	"license": "MIT",
 	"main": "lib/index.js",
 	"module": "lib/index.mjs",
-	"name": "@peralva/npm-template",
+	"name": "@peralva/custom-date",
 	"prettier": "@peralva/prettier-config",
 	"publishConfig": {
 		"access": "public"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/peralva/npm-template.git"
+		"url": "git+https://github.com/peralva/custom-date.git"
 	},
 	"scripts": {
 		"build": "rollup --config",
@@ -56,5 +56,5 @@
 		"start": "node --enable-source-maps --inspect --trace-warnings --watch dist",
 		"test": "node --test dist"
 	},
-	"version": "0.0.0"
+	"version": "1.0.0"
 }
