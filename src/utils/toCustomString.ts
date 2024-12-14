@@ -1,4 +1,3 @@
-import CustomDate from './CustomDate';
 import padStart from './padStart';
 
 export default (date: Date, mask: string, timezone = 0): string => {
@@ -16,7 +15,7 @@ export default (date: Date, mask: string, timezone = 0): string => {
 
 	if (!date.toJSON()) return date.toString();
 
-	const dateWithoutReference = new CustomDate(date);
+	const dateWithoutReference = new Date(date);
 
 	dateWithoutReference.setUTCMinutes(
 		dateWithoutReference.getUTCMinutes() + timezone,
