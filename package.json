@@ -34,8 +34,9 @@
 	],
 	"homepage": "https://github.com/peralva/custom-date#readme",
 	"keywords": [
-		"npm",
-		"template"
+		"date",
+		"mask",
+		"string"
 	],
 	"license": "MIT",
 	"main": "lib/index.js",
@@ -56,5 +57,5 @@
 		"start": "node --enable-source-maps --inspect --trace-warnings --watch dist",
 		"test": "node --test dist"
 	},
-	"version": "1.0.1"
+	"version": "1.0.2"
 }
